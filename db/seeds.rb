@@ -5,9 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#
+User.destroy_all
+Goal.destroy_all
+
 user1 = User.create(name: 'Jimmy Rain', bio: 'a plus')
 user2 = User.create(name: 'Kim Possible', bio: 'a plus')
+user3 = User.create(name: "Arren", bio: 'Software developer making lots of plans')
 #
 goal1 = Goal.create(title: 'Run a marathon', category: 'Fitness', user_id: User.find(3).id)
 goal2 = Goal.create(title: 'Wake up earlier', category: 'Lifestyle', user_id: User.find(3).id)
